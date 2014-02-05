@@ -12,7 +12,15 @@
 namespace BDK\AsyncDispatcherBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use BDK\AsyncDispatcherBundle\DependencyInjection\Compiler\AsyncEventDispatcherPass;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class BDKAsyncDispatcherBundle extends Bundle
 {
+    public function build(ContainerBuilder $container)
+    {
+        parent::build($container);
+
+        $container->addCompilerPass(new AsyncEventDispatcherPass());
+    }
 }
