@@ -9,6 +9,7 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": ">=2.3.0",
+        "bodaclick/async-event-dispatcher":"1.0.x-dev",
         "jms/serializer-bundle": "0.13.*@dev",
         "oldsound/rabbitmq-bundle": "dev-master"
     },
