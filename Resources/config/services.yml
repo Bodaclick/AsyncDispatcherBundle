@@ -1,3 +1,4 @@
 services:
     bdk.async_event_dispatcher:
-        class: BDK\AsyncDispatcherBundle\Model\EventDispatcher\AsyncEventDispatcher
+        class: BDK\AsyncEventDispatcher\AsyncEventDispatcher
+        
